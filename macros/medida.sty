@@ -13,7 +13,7 @@
 \makeatother
 
 \makeatletter
-\newcommand\almostevery{a.e\@ifnextchar.{}{.\ }}
+\newcommand\almostevery{a.e\@ifnextchar.{}{\@ifnextchar,{.}{.\ }}}
 \makeatother
 
 % measures

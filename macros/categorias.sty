@@ -1,0 +1,16 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{categorias}[2025/10/22 Macros gerais para categorias]
+
+\RequirePackage{semantex}
+
+\NewVariableClass\Cat[
+  command =  \mathcal ,
+  define keys={
+    {op}{ upper = {\mathsf{op}} }
+  },
+]
+
+\newcommand\Ob[1]{\operatorname{Ob}_{\Cat{#1}}}
+\newcommand\Hom[1]{\operatorname{Hom}_{\Cat{#1}}}
+\newcommand\dom[1]{\operatorname{dom}(#1)}
+\newcommand\cod[1]{\operatorname{cod}(#1)}
